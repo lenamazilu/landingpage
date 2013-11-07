@@ -14,9 +14,7 @@ html,
 button,
 input,
 select,
-textarea {
-    color: #222;
-}
+
 
 html {
     font-size: 1em;
@@ -97,19 +95,78 @@ textarea {
    Author's custom styles
    ========================================================================== */
    
-.content { 
-	width:1000px;
+body {
+	overflow: hidden; 
+}
+
+#content {
+	min-height: 1000px;
+	height: 1000px;
+}
 	
-	}
+#bio {
 	
-.bio { 
 	width:370px;
-	background-color:ff6e86;
+	height:100%;
+	background-color:#ff6e86;
+	padding-top:55px;
+	padding-left:50px;
+	margin-left:50px;
+	opacity:0.90;
 	
-	}
+}
+
+h1 {
+	font-size:28px;	
+	color:#ffffff;
+	font-family: 'Nixie One';
+}
+
+#fonction {
+	font-size:16px;	
+	color:#ffffff;
+	font-family: 'Open Sans';
+	
+}
+
+#job {
+	display:block;
+	padding-top:355px;
+	font-size:16px;	
+	color:#000000;
+	font-family: 'Open Sans';
+	width:370px;
+	height:100px;
+	
+}
+
+#job a {
+	font-size:16px;	
+	font-weight: 700;
+	text-decoration:none;
+	color:#000000;
+	
+	
+}
+
+#job a:hover {
+	border-bottom: 1px dotted #000;	
+	
+}
+
+#clients {
+	display:block;
+	font-size:13px;	
+	color:#000000;
+	font-family: 'Open Sans';
+	width:340px;
+	height:100px;
+	border-style : solid;
+	border-width : 0 0 1px;
 
 
-
+	
+}
 
 
 
@@ -314,6 +371,10 @@ textarea {
     }
 }
 
-img {
+#background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  z-index: -1;
 }
